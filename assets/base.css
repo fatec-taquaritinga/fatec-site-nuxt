@@ -1053,6 +1053,7 @@ header .submenu {
 
 .aItemMenu:hover {
   padding-left: 2.3rem;
+  padding-right: 1.5rem;
   background-color: rgb(245, 245, 245);
 }
 
