@@ -1,0 +1,20 @@
+{
+  "name": "Fatec Taquaritinga",
+  "short_name": "Fatec",
+  "start_url": "/?standalone=true",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#b01116",
+  "background_color": "#b01116",
+  "display": "standalone"
+}

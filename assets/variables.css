@@ -1,0 +1,25 @@
+:root {
+  --cor-verde: rgb(165, 200, 0);
+  --cor-verde-texto: rgb(100, 180, 30);
+
+  --cor-azul: rgb(0, 100, 140);
+  --cor-azul-texto: rgb(0, 100, 140);
+
+  --cor-vermelho: rgb(210, 0, 0);
+  --cor-vermelho-texto: rgb(210, 0, 0);
+
+  --cor-azul-claro: rgb(0, 150, 210);
+  --cor-azul-claro-texto: rgb(0, 150, 210);
+
+  --cor-amarelo: rgb(255, 255, 150);
+  --cor-amarelo-texto: rgb(255, 255, 150);
+
+  --cor-laranja: rgb(255, 150, 30);
+  --cor-laranja-texto: rgb(255, 150, 30);
+
+  --cor-vermelho-cps: rgb(176, 17, 22);
+  --cor-vermelho-cps-texto: rgb(176, 17, 22);
+
+  --cor-azul-cps: rgb(74, 85, 92);
+  --cor-azul-cps-texto: rgb(74, 85, 92);
+}

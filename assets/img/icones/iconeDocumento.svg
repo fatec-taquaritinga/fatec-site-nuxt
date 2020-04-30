@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100">
+<path fill="#00506E" d="M10,0C4.5,0,0,4.5,0,10v80c0,5.5,4.5,10,10,10h60c5.5,0,10-4.5,10-10V30L50,0H10 M10,10h35v25h25v55H10V10"/>
+    <g fill="#646464">
+        <rect x="20" y="70" width="25" height="10"/>
+        <polyline points="20,50 20,60 60,60 60,50 20,50"/>
+    </g>
+</svg>

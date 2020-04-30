@@ -1,0 +1,5039 @@
+/* Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* Parágrafos */
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 120%;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  text-align: center;
+}
+
+h1,
+h1>a {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+h2,
+h2>a {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+h3,
+h3>a {
+  font-size: 1.6rem;
+}
+
+h4,
+h4>a {
+  font-size: 1.4rem;
+}
+
+p,
+li,
+label {
+  color: rgb(110, 110, 110);
+  line-height: 150%;
+  font-size: 1.2rem;
+}
+
+ul,
+ol {
+  margin-left: 2rem;
+}
+
+hr {
+  border-top: 3px solid rgb(230, 230, 230);
+  margin: 2.5rem 0;
+}
+
+/* Hyperlinks */
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(0, 110, 160);
+  transition: all 0.5s;
+  line-height: 150%;
+}
+
+a:hover {
+  color: rgb(0, 130, 180);
+  transition: all 0.5s;
+}
+
+.aBotao {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 0.9rem;
+  border-radius: 5px;
+}
+
+.aBotao:hover {
+  transform: translateY(-0.2rem);
+}
+
+/* Tabelas */
+
+.divOverflow {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid white;
+  color: white;
+}
+
+table tbody td {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgb(200, 200, 200);
+  font-size: 1rem;
+  color: rgb(110, 110, 110);
+}
+
+table a,
+table p {
+  font-size: 1rem;
+}
+
+/* Rolagem horizontal */
+
+.rolagemHorizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rolagemHorizontal .setaRolagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rolagemHorizontal .setaRolagem img {
+  height: 1.5rem;
+}
+
+.rolagemHorizontal .setaRolagem:first-child {
+  margin-right: 1rem;
+}
+
+.rolagemHorizontal .setaRolagem:last-child {
+  margin-left: 1rem;
+}
+
+
+/* Tabelas do Portal Acadêmico */
+
+.portalAcademico table {
+  margin: 2rem 0;
+}
+
+.portalAcademico table th {
+  background-color: white;
+  color: rgb(100, 100, 100);
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.portalAcademico table tbody tr:nth-child(odd) {
+  background-color: rgb(250, 250, 250);
+}
+
+.portalAcademico table tbody td {
+  border: none;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 1rem 0.8rem;
+  text-align: left;
+}
+
+.portalAcademico table a {
+  display: flex;
+  align-items: center;
+}
+
+.portalAcademico table .fotoPessoa,
+.portalAcademico table .miniaturaFoto,
+.portalAcademico table .logoEmpresa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 2px solid rgb(240, 240, 240);
+  margin-right: 0.4rem;
+}
+
+.portalAcademico table .fotoPessoa {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.portalAcademico table .miniaturaFoto {
+  width: 4.5rem;
+  height: 3rem;
+  border-radius: 5px;
+}
+
+.portalAcademico table .logoEmpresa {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+}
+
+.portalAcademico table .logoEmpresa .logoHorizontal {
+  width: 100%;
+}
+
+.portalAcademico table .logoEmpresa .logoVertical {
+  height: 100%;
+}
+
+.portalAcademico table .aIcone {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.portalAcademico table .colunaAcoes {
+  width: 5.5rem;
+}
+
+.portalAcademico table .aIcone img {
+  height: 1.3rem;
+}
+
+.portalAcademico .rodapeTabela {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portalAcademico .rodapeTabela .aBotao {
+  padding: 0.6rem 0.8rem;
+  margin-right: 0.7rem;
+  flex-shrink: 0;
+}
+
+.portalAcademico .rodapeTabela .aBotao:last-child {
+  margin-right: 0;
+}
+
+.portalAcademico .downloadsExclusivos .framesDownloads {
+  margin: 1rem 0 2rem 0;
+}
+
+.portalAcademico .portalApoiador textarea {
+  height: 20rem;
+}
+
+/* Frame modal */
+
+.frameModal,
+.frameModalLogin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.frameModalLogin .conteudoLogin {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 3rem 2rem;
+  width: 35rem;
+  max-width: 85%;
+  border-radius: 10px;
+  border: 6px solid rgb(240, 240, 240);
+}
+
+.frameModalLogin .conteudoLogin img {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  height: 6rem;
+}
+
+.frameModalLogin .conteudoLogin h2 {
+  margin-bottom: 2rem;
+}
+
+.frameModalLogin .conteudoLogin label {
+  margin-bottom: 0.2rem;
+}
+
+.frameModalLogin .conteudoLogin input {
+  margin-bottom: 0.8rem;
+}
+
+.frameModalLogin .conteudoLogin input:last-child {
+  margin-bottom: 0;
+}
+
+.frameModalLogin .conteudoLogin a {
+  display: block;
+  margin: 0 0 0.7rem 0.4rem;
+}
+
+.frameModal .areaModal {
+  width: 45rem;
+  max-width: 80%;
+  max-height: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 6px solid rgb(250, 250, 250);
+}
+
+.frameModal .topoModal {
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 3px solid rgb(230, 230, 230);
+}
+
+.frameModal .topoModal a {
+  height: 1.2rem;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameModal .topoModal h3 {
+  margin: 0 0.5rem 0 0;
+}
+
+.frameModal .conteudoModal {
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.frameModal .conteudoModal h2 {
+  margin-bottom: 0.6rem;
+}
+
+.frameModal .conteudoModal h3 {
+  margin-bottom: 1rem;
+}
+
+.frameModal .conteudoModal h4 {
+  margin-top: 1.8rem;
+}
+
+.frameModal .conteudoModal .logoEstagio {
+  display: inline-block;
+  height: 8rem;
+}
+
+
+/* Genéricos */
+
+
+.iconeGeral {
+  height: 1.4rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.translate:hover {
+  transform: translateY(-0.2rem);
+  transition: all 0.5s;
+}
+
+.divFlex {
+  display: flex;
+  align-items: center;
+}
+
+.divDica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.divDica img {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.centralizarDiv {
+  width: 80rem;
+  max-width: 90%;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.centralizarTexto {
+  text-align: center;
+}
+
+.textoEsquerda {
+  text-align: left;
+}
+
+.textoDireita {
+  text-align: right;
+}
+
+.larguraTotal {
+  width: 100%;
+}
+
+.largura70 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alturaTotal {
+  height: 100%;
+}
+
+/* SecaoDividida */
+
+.secaoDividida {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  min-height: 18rem;
+  margin: 2.5rem auto;
+}
+
+.secaoDividida .divisaoImagem {
+  width: 22rem;
+  height: 14rem;
+  margin-right: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.secaoDividida .divisaoTexto {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+/* Tamanhos de texto */
+
+.texto10 {
+  font-size: 1rem;
+}
+
+.texto11 {
+  font-size: 1.1rem;
+}
+
+.texto12 {
+  font-size: 1.2rem;
+}
+
+.texto13 {
+  font-size: 1.3rem;
+}
+
+.texto14 {
+  font-size: 1.4rem;
+}
+
+/* Cores de texto e fundo */
+
+.textoBranco,
+.textoBranco:hover {
+  color: white;
+}
+
+.fundoBranco {
+  background-color: white;
+}
+
+.fundoCinza240 {
+  background-color: rgb(240, 240, 240);
+}
+
+.fundoCinza250 {
+  background-color: rgb(250, 250, 250);
+}
+
+.fundoCinza80 {
+  background-color: rgb(80, 80, 80);
+}
+
+.bordaCima240 {
+  border-top: 6px solid rgb(240, 240, 240);
+}
+
+.bordaBaixo240 {
+  border-bottom: 6px solid rgb(240, 240, 240);
+}
+
+.bordaCima230 {
+  border-top: 6px solid rgb(230, 230, 230);
+}
+
+.bordaBaixo230 {
+  border-bottom: 6px solid rgb(230, 230, 230);
+}
+
+.bordaCima220 {
+  border-top: 6px solid rgb(220, 220, 220);
+}
+
+.bordaBaixo220 {
+  border-bottom: 6px solid rgb(220, 220, 220);
+}
+
+
+.textoVerde,
+.textoVerde:hover {
+  color: var(--cor-verde-texto);
+}
+
+.fundoVerde {
+  background-color: var(--cor-verde);
+}
+
+.textoAzul,
+.textoAzul:hover {
+  color: var(--cor-azul-texto);
+}
+
+.fundoAzul {
+  background-color: var(--cor-azul);
+}
+
+.textoVermelho,
+.textoVermelho:hover {
+  color: var(--cor-vermelho-texto);
+}
+
+.fundoVermelho {
+  background-color: var(--cor-vermelho);
+}
+
+.textoAzulClaro,
+.textoAzulClaro:hover {
+  color: var(--cor-azul-claro-texto);
+}
+
+.fundoAzulClaro {
+  background-color: var(--cor-azul-claro);
+}
+
+.textoVermelhoCPS,
+.textoVermelhoCPS:hover {
+  color: var(--cor-vermelho-cps-texto);
+}
+
+.fundoVermelhoCPS {
+  background-color: var(--cor-vermelho-cps);
+}
+
+.textoAzulCPS,
+.textoAzulCPS:hover {
+  color: var(--cor-azul-cps-texto);
+}
+
+.fundoAzulCPS {
+  background-color: var(--cor-azul-cps);
+}
+
+.textoAmarelo,
+.textoAmarelo:hover {
+  color: var(--cor-amarelo-texto);
+}
+
+.fundoAmarelo {
+  color: var(--cor-amarelo);
+}
+
+.textoLaranja,
+.textoLaranja:hover {
+  color: var(--cor-laranja-texto);
+}
+
+.fundoLaranja {
+  background-color: var(--cor-laranja);
+}
+
+/* Banner topo */
+
+.bannerTopo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 5rem 0;
+}
+
+.bannerTopo .bannerLogo {
+  width: 50rem;
+  max-width: 70%;
+  padding: 4.5rem;
+  border-radius: 60px 10px 60px 10px;
+  background-color: white;
+}
+
+.bannerTopo .bannerFundo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.bannerGeral,
+.bannerMenor {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bannerGeral {
+  height: 32rem;
+}
+
+.bannerMenor {
+  height: 25rem;
+}
+
+.bannerGeral img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.bannerMenor img {
+  width: auto;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+
+/* Seção Anúncio Cursos */
+
+.secaoAnuncioCursos .framesCursosAlt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.secaoAnuncioCursos .frameCursoAlt {
+  width: 18rem;
+  background-color: rgb(253, 253, 253);
+  padding: 2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  border: 2px solid rgb(230, 230, 230);
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.1);
+}
+
+.secaoAnuncioCursos .frameCursoAlt img {
+  height: 4rem;
+}
+
+
+/* Formularios */
+
+
+form {
+  width: 100%;
+}
+
+label,
+form p {
+  display: block;
+  font-weight: 700;
+  margin: 0.5rem 0 0.5rem 0.2rem;
+}
+
+.inputRadio>input,
+.inputCheck>input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.inputRadio>label,
+.inputCheck>label {
+  font-weight: 400;
+}
+
+form .espacoMaior {
+  margin-top: 1rem;
+}
+
+form .espacoEmbaixo {
+  margin-bottom: 2rem;
+}
+
+form .labelDesativada,
+form .labelDesativada span {
+  color: rgb(150, 150, 150);
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form input[type=date],
+form input[type=time],
+form input[type=number],
+form input[type=tel],
+form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid rgb(210, 210, 210);
+  margin-bottom: 2rem;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+}
+
+form input[type=submit],
+form input[type=button] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form textarea {
+  height: 8rem;
+  resize: none;
+}
+
+.portalNoticia textarea {
+  height: 26rem;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=password]:focus,
+form input[type=date]:focus,
+form input[type=time]:focus,
+form input[type=number]:focus,
+form input[type=tel]:focus,
+form input[type=radio]:focus,
+form textarea:focus,
+form input[type=text]:hover,
+form input[type=email]:hover,
+form input[type=password]:hover,
+form input[type=date]:hover,
+form input[type=time]:hover,
+form input[type=number]:hover,
+form input[type=tel]:hover,
+form input[type=radio]:hover,
+form textarea:hover,
+select:focus,
+select:focus {
+  outline: none;
+}
+
+form input[type=submit],
+form input[type=button] {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 80, 110);
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1rem;
+}
+
+form input[type=submit]:hover,
+form input[type=button]:hover {
+  background-color: rgb(0, 110, 160);
+  transition: all 0.5s;
+}
+
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem 1.4rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: 2px solid rgb(210, 210, 210);
+  background-color: rgb(250, 250, 250);
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+}
+
+.divSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.divSelect>label {
+  margin: 0;
+  padding: 0;
+}
+
+.divSelect>select {
+  width: auto;
+  margin: 0 0 0 0.5rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.formBotoesRodape {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.formBotoesRodape input {
+  margin-right: 0.7rem;
+}
+
+.formBotoesRodape input:last-child {
+  margin-right: 0;
+}
+
+.formBotoesRodape .botaoCancelar,
+.formBotoesRodape .botaoCancelar:hover {
+  background-color: rgb(200, 0, 0);
+}
+
+
+/* Fileira botões navegação */
+
+.fileiraBotoesNavegacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.fileiraBotoesNavegacao a {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  margin-right: 0.8rem;
+}
+
+.fileiraBotoesNavegacao a:last-child {
+  margin-right: 0;
+}
+
+
+/* Lista Links */
+
+.listaLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.listaLinks>a {
+  margin: 0.5rem 0.7rem 0.5rem 0;
+  padding: 0.6rem 1rem;
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  background-color: rgb(250, 250, 250);
+  font-weight: 700;
+  color: rgb(100, 100, 100);
+}
+
+.listaLinks>a:last-child {
+  margin-right: 0;
+}
+
+.listaLinks>a:hover {
+  color: rgb(0, 80, 110);
+  border: 2px solid rgb(0, 80, 110);
+}
+
+.listaLinks #linkSelecionado {
+  background-color: rgb(200, 0, 0);
+  border: 2px solid rgb(220, 0, 0);
+  color: white;
+}
+
+
+/* Header */
+
+header {
+  background-color: rgb(253, 253, 253);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  border-bottom: 3px solid rgb(245, 245, 245);
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+}
+
+.primeiraSecao {
+  margin-top: 6rem;
+}
+
+header nav {
+  width: 80rem;
+  max-width: 95%;
+  height: 6rem;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#logoFatec,
+#logoCPS,
+#logoGoverno {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#logoFatec {
+  margin-right: 2rem;
+}
+
+#logoCPS {
+  margin-right: 1.5rem;
+}
+
+#logoFatec img,
+#logoCPS img,
+#logoGoverno img {
+  height: 60%;
+  transition: all 0.5s;
+}
+
+header .menuTopo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header .menuTopo a {
+  cursor: pointer;
+}
+
+header .menuTopo>li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#botaoMenu {
+  height: 100%;
+  display: none;
+  align-items: center;
+  padding: 0 1.5rem;
+  transition: all 0.5s;
+}
+
+#botaoMenu img {
+  height: 20%;
+}
+
+header .menuTopo>li:hover #botaoMenu {
+  background-color: rgb(250, 250, 250);
+  transition: all 0.5s;
+}
+
+header .itensMenu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header .itemMenu {
+  height: 100%;
+  position: relative;
+}
+
+header .itemMenu>a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 6px solid rgb(253, 253, 253);
+  padding: 0 0.8rem;
+  color: rgb(80, 80, 80);
+}
+
+header .submenu {
+  position: absolute;
+  top: 6rem;
+  background-color: white;
+  width: 22rem;
+  background-color: rgb(253, 253, 253);
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  display: none;
+}
+
+.aItemMenu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1.1rem 1.5rem;
+  color: rgb(80, 80, 80);
+  font-size: 1.1rem;
+}
+
+.aItemMenu img {
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.aItemMenu:hover {
+  padding-left: 2.3rem;
+  background-color: rgb(245, 245, 245);
+}
+
+.aItemMenu>div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.aItemMenu:hover div {
+  width: 0.8rem;
+  transition: all 0.5s;
+}
+
+.aItemMenuCursos {
+  padding: 0.7rem 2.8rem;
+}
+
+.aItemMenuCursos img {
+  height: 2rem;
+}
+
+.aItemMenuCursos:hover {
+  padding-left: 3.5rem;
+}
+
+header .submenu .subtituloMenu {
+  padding: 1.2rem 1.2rem 0.5rem 1.2rem;
+  color: rgb(80, 80, 80);
+}
+
+header .itemMenu:hover>a {
+  color: rgb(0, 80, 110);
+  border-bottom: 6px solid rgb(210, 0, 0);
+  background-color: rgb(245, 245, 245);
+}
+
+header .itemMenu:hover .submenu {
+  display: block;
+}
+
+.divEscuroHeader {
+  position: fixed;
+  width: 100%;
+  top: 6rem;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 2;
+  display: none;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 1rem 0;
+  background-color: rgb(80, 80, 80);
+}
+
+footer .centralizarDiv {
+  width: 70rem;
+  max-width: 86%;
+}
+
+footer p {
+  color: rgb(180, 180, 180);
+}
+
+footer img {
+  opacity: 80%;
+}
+
+footer .fileiraLogos {
+  display: flex;
+  align-items: center;
+}
+
+footer .fileiraLogos a {
+  height: 3.8rem;
+  margin-right: 1rem;
+}
+
+footer .fileiraEndereco {
+  display: flex;
+  align-items: flex-start;
+  border-top: 3px solid rgb(100, 100, 100);
+  border-bottom: 3px solid rgb(100, 100, 100);
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+footer .fileiraEndereco>div {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 2rem;
+}
+
+footer .fileiraEndereco>div img {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+footer .fileiraEndereco>div:first-child {
+  width: 21rem;
+}
+
+footer .fileiraEndereco>div:nth-child(2) {
+  width: 11rem;
+  margin-right: 0;
+}
+
+footer .fileiraRedesSociais {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid rgb(100, 100, 100);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer .fileiraRedesSociais a {
+  display: flex;
+  align-items: center;
+  height: 1.7rem;
+  margin-left: 0.8rem;
+}
+
+footer .fileiraCreditos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .fileiraCreditos .aBotao {
+  background-color: rgb(0, 140, 200);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  margin-left: 1rem;
+}
+
+/* Carrossel */
+
+.carrosselIndex,
+.secaoCampus,
+.carrosselInfra {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carrosselIndex {
+  height: 40vw;
+  background-image: url('img/destaques/bannerIndexA.jpg');
+}
+
+.secaoCampus {
+  background-attachment: fixed;
+  box-sizing: border-box;
+  padding: 5rem 1rem;
+  background-position: center center;
+  background-image: url('img/banners/CampusFatec.jpg');
+}
+
+.carrosselInfra {
+  margin: 2rem 0 3.5rem 0;
+  height: 40rem;
+  background-image: url('img/gerais/biblioteca.jpg');
+}
+
+.setasCarrossel {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.setasCarrossel a {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.setasCarrossel a img {
+  height: 50%;
+}
+
+.carrosselLegenda {
+  width: 90%;
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.carrosselLegenda h1 {
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+
+.carrosselLegenda h2 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.fadeBaixo {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-blend-mode: multiply;
+}
+
+
+.carrosselInfra h2 {
+  z-index: 1;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  border: 2px solid white;
+  color: white;
+  margin: 0;
+  position: absolute;
+  bottom: -2.2rem;
+}
+
+.secaoCampus h1 {
+  margin: 0.2rem 0;
+}
+
+.secaoCampus h1 a {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.secaoCampus>a {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+}
+
+.secaoCampus>a img {
+  height: 50%;
+  position: relative;
+  left: 0.3rem;
+}
+
+
+/* Index */
+
+.secaoRedesSociais {
+  box-sizing: border-box;
+  padding: 0 2rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.secaoRedesSociais>div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.secaoRedesSociais a {
+  height: 35%;
+  margin-left: 0.8rem;
+}
+
+.secaoCursos {
+  padding: 3rem 0 6rem 0;
+}
+
+.secaoCursos>div {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.framesCursos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.frameCurso {
+  width: 15rem;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0.7rem;
+  text-align: center;
+  padding: 1.5rem 1rem 3rem 1rem;
+  position: relative;
+  transition: all 0.5s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.frameCurso img {
+  height: 5rem;
+  margin-bottom: 0.3rem;
+}
+
+.frameCurso h3 {
+  margin: 0.1rem;
+}
+
+.frameCurso>p:nth-child(4) {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: rgb(150, 150, 150);
+}
+
+.frameCurso .aBotao {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-weight: 400;
+}
+
+.frameCurso .aBotao:hover {
+  transform: translateY(0);
+}
+
+.secaoVestibular>div {
+  width: 80rem;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 6rem 0;
+}
+
+.secaoVestibular .bigLink {
+  display: inline-block;
+  font-size: 3rem;
+  color: white;
+  border: 3px solid white;
+  border-radius: 2.5vw 0.5vw 2.5vw 0.5vw;
+  padding: 1rem 2rem;
+  margin-bottom: -2rem;
+  background-color: rgb(0, 140, 200);
+  transition: all 0.5s;
+  position: relative;
+  top: -4.2rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.secaoVestibular .bigLink:hover {
+  background-color: rgb(0, 180, 200);
+}
+
+.secaoVestibular .divisaoTexto {
+  width: 40rem;
+  margin-right: 5rem;
+}
+
+.secaoVestibular .divisaoTexto h2,
+.secaoVestibular .divisaoTexto h3,
+.secaoVestibular .divisaoTexto p {
+  color: white;
+  text-align: left;
+}
+
+.secaoVestibular .aBotao {
+  margin-top: 1.5rem;
+}
+
+.secaoVestibular .divisaoTexto p {
+  margin-top: 1rem;
+}
+
+.secaoVestibular .divisaoTexto p a {
+  color: white;
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.1rem;
+}
+
+.secaoVestibular img {
+  height: 18rem;
+  flex-shrink: 0;
+}
+
+.secaoNoticias .framesNoticias,
+.secaoEventos .framesEventos {
+  margin: 1rem 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.secaoNoticias .frameNoticia,
+.secaoEventos .frameEvento {
+  box-sizing: border-box;
+  width: 22.5rem;
+  margin: 0.7rem;
+  background-color: white;
+  flex-shrink: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.secaoNoticias .frameNoticia>div {
+  padding: 1.2rem 1.2rem 4.8rem 1.2rem;
+}
+
+.secaoEventos .frameEvento {
+  padding: 1.5rem 1.5rem 4.3rem 1.5rem;
+}
+
+.secaoEventos .eventoTags p,
+.secaoEventos .eventoNaturezaAlt {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.secaoEventos .eventoTitulo {
+  display: block;
+  margin: 1rem 0 1.2rem 0;
+}
+
+.secaoEventos .eventoPessoa>a {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.secaoEventos .eventoPessoa p {
+  margin-bottom: -0.2rem;
+}
+
+.secaoEventos .eventoData {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border-top: 2px solid rgb(240, 240, 240);
+  border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+.secaoEventos .eventoData img {
+  height: 1.2rem;
+  margin: 0 0.5rem 0 0.3rem;
+}
+
+.secaoEventos .aBotao {
+  padding: 0.5rem 0.6rem;
+}
+
+.secaoEventos .frameEvento>div:last-child {
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+.frameNoticia .imagemNoticia,
+.frameEvento .imagemEvento {
+  display: block;
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  opacity: 0.8;
+  margin-bottom: 0.7rem;
+}
+
+.frameNoticia .imagemNoticia img,
+.frameEvento .imagemEvento img {
+  width: 100%;
+}
+
+.frameNoticia .imagemNoticia:hover {
+  opacity: 1;
+}
+
+.frameNoticia .tituloNoticia {
+  line-height: 120%;
+}
+
+.frameNoticia .dataNoticia {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.frameNoticia .dataNoticia img {
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: -0.1rem;
+}
+
+.frameNoticia .fileiraBotoes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid rgb(240, 240, 240);
+  position: absolute;
+  bottom: 1.2rem;
+}
+
+.frameNoticia .fileiraBotoes a {
+  height: 1.5rem;
+  margin-left: 0.7rem;
+  position: relative;
+  top: -0.1rem;
+}
+
+.secaoDepoimentos .framesDepoimentos {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding-bottom: 3rem;
+  overflow-x: auto;
+}
+
+.secaoDepoimentos .frameDepoimento {
+  width: 25%;
+  margin: 2rem 0.7rem;
+  background-color: white;
+  padding: 2rem 2rem 4rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.secaoDepoimentos .frameDepoimento .depoimentoTexto {
+  margin-bottom: 0.8rem;
+  color: rgb(130, 130, 130);
+}
+
+.secaoDepoimentos .frameDepoimento .depoimentoFoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 5px solid rgb(230, 230, 230);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -3.1rem;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* Página Curso */
+
+
+.cursoBanner {
+  padding: 8rem 0 6rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url('img/banners/bannerADS.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 80px rgba(0, 0, 0, 0.4);
+}
+
+.cursoBanner h1,
+h2,
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+.cursoBanner div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursoBanner>div {
+  box-sizing: border-box;
+  width: 55rem;
+  max-width: 80%;
+  flex-direction: column;
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 100px 0px 100px 0px;
+  border: 8px solid rgb(250, 250, 250);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cursoBanner>div>div {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  margin-bottom: -3.8rem;
+  position: relative;
+  top: -4.5rem;
+  border: 8px solid white;
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+.cursoBanner>div img {
+  height: 50%;
+}
+
+.cursoSobre {
+  padding-bottom: 2rem;
+}
+
+.descricaoCurso {
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.descricaoCurso img {
+  width: 45%;
+  margin-right: 2rem;
+}
+
+.descricaoCurso p {
+  width: 55%;
+}
+
+.divLeitura {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto 1.5rem auto;
+  width: 45rem;
+  max-width: 100%;
+}
+
+.divIconeLeitura {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  margin-right: 0.8rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0.2rem;
+}
+
+.divIconeLeitura div {
+  width: 1.2rem;
+  height: 0.2rem;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.divIconeLeitura div::after {
+  content: "";
+  display: block;
+  width: 0.8rem;
+  height: 0.2rem;
+  background-color: white;
+  border-radius: 1px;
+  position: absolute;
+  bottom: 0.4rem;
+}
+
+.divIconeLeitura div::before {
+  content: "";
+  display: block;
+  width: 1.2rem;
+  height: 0.2rem;
+  background-color: white;
+  border-radius: 1px;
+  position: absolute;
+  top: 0.4rem;
+}
+
+
+.grupoFacebook {
+  border-top: 3px solid rgb(220, 220, 220);
+  border-bottom: 3px solid rgb(220, 220, 220);
+  padding: 2rem 0;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grupoFacebook>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.8rem;
+}
+
+.grupoFacebook>a>img {
+  height: 4rem;
+  flex-shrink: 0;
+}
+
+.grupoFacebook>a>div {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid rgb(230, 230, 230);
+  margin-left: -1rem;
+  z-index: -1;
+}
+
+.grupoFacebook>a>div img {
+  height: 50%;
+}
+
+.secaoMatrizCurricular table tbody td {
+  font-size: 0.8rem;
+}
+
+.secaoMatrizCurricular table a,
+.secaoMatrizCurricular table p {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.secaoMatrizCurricular table .semestre {
+  width: 10.75%;
+}
+
+.secaoMatrizCurricular table .dia,
+table .horario {
+  text-align: center;
+  font-weight: 700;
+  background-color: rgb(250, 250, 250);
+  width: 5%;
+}
+
+.secaoMatrizCurricular .cursoTurno {
+  margin-bottom: 1rem;
+}
+
+.secaoInfra {
+  margin: -2.5rem 0 3rem 0;
+}
+
+.secaoInfra .largura70 {
+  width: 60rem;
+  max-width: 90%;
+}
+
+.secaoOportunidades .framesEstagios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.secaoOportunidades .frameEstagio {
+  box-sizing: border-box;
+  width: 55rem;
+  max-width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.secaoOportunidades .frameEstagio .empresaLogo {
+  width: 8rem;
+}
+
+.secaoOportunidades .frameEstagio .empresaInfo {
+  border-left: 1px solid rgb(220, 220, 220);
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
+.secaoOportunidades .frameEstagio h2,
+.secaoOportunidades .frameEstagio h3 {
+  text-align: left;
+}
+
+.secaoOportunidades .frameEstagio .filaCompartilhar {
+  margin: 1.5rem 0 0 0;
+}
+
+.secaoDocentes>div>p {
+  margin-bottom: 3rem;
+}
+
+.frameDocente {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0 4.5rem 3rem;
+  padding: 2rem 1rem 2rem 10rem;
+  position: relative;
+}
+
+.frameDocente .imagemDocente {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid white;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  flex-shrink: 0;
+}
+
+.frameDocente .nomeDocente {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.frameDocente .mailLattes {
+  flex-wrap: wrap;
+}
+
+.frameDocente .mailLattes>a {
+  margin: 0.5rem 0;
+}
+
+.frameDocente .mailLattes>a:first-child {
+  margin-right: 1rem;
+}
+
+.docenteDisciplinas .aBotao {
+  padding: 0.3rem 0.5rem;
+  margin: 0 0.3rem 0.3rem 0;
+  text-align: left;
+}
+
+.docenteDisciplinas>p {
+  margin-bottom: 0.3rem;
+}
+
+.secaoDepoimentos.paginaCursos {
+  border: none;
+  background-color: white;
+}
+
+.secaoDepoimentos.paginaCursos .frameDepoimento {
+  background-color: rgb(240, 240, 240);
+  box-shadow: none;
+}
+
+.secaoDepoimentos.paginaCursos .frameDepoimento .depoimentoFoto {
+  border-color: white;
+}
+
+.secaoDepoimentos.paginaCursos .divApoiadores {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.secaoDepoimentos.paginaCursos .apoiador {
+  display: inline-block;
+  height: 4rem;
+  flex-shrink: 0;
+  margin: 1rem;
+}
+
+
+/* Página Extensão Tecnológica */
+
+.secaoPesquisa {
+  padding: 3rem 0;
+}
+
+.pesquisaArea {
+  width: 50rem;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.pesquisaArea .campoPesquisa {
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.pesquisaArea .botaoPesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid rgb(210, 210, 210);
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  box-sizing: border-box;
+}
+
+.pesquisaArea .botaoPesquisa:focus {
+  outline: none;
+}
+
+.pesquisaArea .botaoPesquisa img {
+  height: 1.2rem;
+  padding: 0 1rem;
+}
+
+.cursosAnteriores>div>p:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+.cursosAnteriores sup {
+  font-size: 70%;
+}
+
+/* Página proposição de eventos */
+
+
+.divAlertaNovoEvento {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid rgb(230, 230, 230);
+  margin: 2rem 0;
+}
+
+.divAlertaNovoEvento ol {
+  margin: 2rem 0 2rem 3rem;
+}
+
+.divAlertaNovoEvento ol li {
+  margin: 0.8rem 0;
+}
+
+.formNovoEvento {
+  margin: 2rem 0;
+}
+
+.formNovoEvento>p:first-child {
+  margin-bottom: 1.5rem;
+}
+
+/* Página evento */
+
+.infoEvento h2 {
+  text-align: left;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  margin: 0 0.8rem 0 0;
+}
+
+.infoEvento h1 {
+  margin: 1rem 0;
+}
+
+.infoEvento .eventoVinculo {
+  margin: 1rem 0 2rem 0;
+}
+
+.infoEvento h3 {
+  margin-bottom: 1.5rem;
+}
+
+.infoEvento h4 {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.infoEvento .aBotao {
+  margin: 2rem 0 0.8rem 0;
+}
+
+.filaCompartilhar .texto12 {
+  margin: 0;
+}
+
+.filaCompartilhar a {
+  height: 2rem;
+  margin-left: 0.8rem;
+}
+
+.filaCompartilhar a img {
+  margin: 0;
+  width: auto;
+}
+
+.sobreResponsavel h2 {
+  padding-top: 3rem;
+}
+
+.sobreResponsavel hr {
+  width: 70rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.sobreResponsavel>div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 55rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.sobreResponsavel h3 {
+  margin-bottom: 1rem;
+}
+
+.sobreResponsavel .fotoResponsavel,
+.infoEvento .fotoRespMini {
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobreResponsavel .fotoResponsavel {
+  width: 12rem;
+  height: 12rem;
+  margin-right: 1.5rem;
+  border: 3px solid rgb(250, 250, 250);
+}
+
+.infoEvento .fotoRespMini {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 0.7rem;
+}
+
+.linksResponsavel {
+  flex-wrap: wrap;
+}
+
+.linksResponsavel a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
+  border-radius: 50%;
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid rgb(230, 230, 230);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0.5rem 0 0;
+}
+
+.linksResponsavel .iconeMenor {
+  height: 70%;
+}
+
+.paginaEvento .frameEvento {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Página Central de Notícias */
+
+
+.paginaNoticias .frameNoticia {
+  border: 2px solid rgb(220, 220, 220);
+  box-shadow: none;
+}
+
+.paginaNoticias h2 {
+  margin: 4rem 0 1rem 0;
+}
+
+.secaoRedes .fileiraRedes {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.secaoRedes .fileiraRedes a {
+  height: 3rem;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.secaoRedes .fileiraRedes a:last-child {
+  margin-right: 0;
+}
+
+/* Página Notícia */
+
+.corpoNoticia .respNoticia {
+  margin: 0;
+  font-weight: 700;
+}
+
+.corpoNoticia .dataNoticia {
+  margin-bottom: 2rem;
+}
+
+.corpoNoticia h1,
+.corpoNoticia h2,
+.corpoNoticia h3 {
+  text-align: left;
+}
+
+.corpoNoticia h1 {
+  color: rgb(176, 17, 22);
+}
+
+.corpoNoticia h2,
+.corpoNoticia h3 {
+  color: rgb(74, 85, 92);
+  margin: 2rem 0 1rem 0;
+}
+
+.corpoNoticia p {
+  margin-bottom: 1rem;
+}
+
+.corpoNoticia ul,
+.corpoNoticia ol {
+  margin: 0 0 1rem 3rem;
+}
+
+.corpoNoticia img {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.paginaNoticia .frameNoticia>div {
+  padding: 0.5rem 1.2rem 1rem 1.2rem;
+}
+
+/* Página Quem Somos */
+
+.resumoQuemSomos {
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.logoFatecAlt {
+  width: 13rem;
+  height: 13rem;
+  background-color: white;
+  border: 4px solid rgb(230, 230, 230);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.logoFatecAlt img {
+  width: 70%;
+}
+
+.quemSomosInfo {
+  width: 40rem;
+}
+
+.quemSomosInfo p {
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  box-sizing: border-box;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 0.3rem;
+  background-color: rgb(200, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.15rem;
+}
+
+.frameTimeline {
+  box-sizing: border-box;
+  padding: 1rem 2.5rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.ladoEsquerdo {
+  padding-left: 0;
+  left: 0;
+}
+
+.ladoDireito {
+  left: 50%;
+  padding-right: 0;
+}
+
+.frameTimeline::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  right: -0.7rem;
+  background-color: white;
+  border: 4px solid rgb(100, 100, 100);
+  top: 2.3rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ladoDireito::after {
+  left: -0.7rem;
+}
+
+.frameTimeline>div {
+  padding: 2rem;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.ladoEsquerdo::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-left: 1rem solid white;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+}
+
+.ladoDireito::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-right: 1rem solid white;
+  position: absolute;
+  left: 1.5rem;
+  top: 2rem;
+}
+
+.timeline h4 {
+  margin-bottom: 1rem;
+}
+
+.timeline ul li {
+  margin-bottom: 0.8rem;
+}
+
+.timeline .filaFotos {
+  flex-wrap: wrap;
+}
+
+.timeline .filaFotos .fotoHistoria,
+.timeline .filaFotos .logoHistoria {
+  width: 7.5rem;
+  height: 6rem;
+  overflow: hidden;
+  margin: 1rem 1.2rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid rgb(230, 230, 230);
+}
+
+.timeline .filaFotos .logoHistoria {
+  width: auto;
+  height: 5rem;
+  border-radius: 0;
+  border: none;
+}
+
+.timeline .filaFotos .logoHorizontal {
+  height: 4rem;
+}
+
+.timeline .filaFotos .fotoHistoria:last-child,
+.timeline .filaFotos .logoHistoria:last-child {
+  margin-right: 0;
+}
+
+.timeline #logoFatec25 {
+  width: auto;
+  height: 9rem;
+}
+
+.timeline #logoMaratona {
+  width: auto;
+  height: 6rem;
+}
+
+.timeline #logoSIGA {
+  width: auto;
+  height: 3.5rem;
+}
+
+
+/* Página Central de Downloads */
+
+.divisaoDownload {
+  margin: 3rem 0;
+}
+
+.divisaoDownloadSeparada .divisaoDownload {
+  margin: 0;
+}
+
+.divisaoDestaque {
+  padding: 2rem 0;
+  border: 3px solid rgb(230, 230, 230);
+  border-radius: 10px;
+}
+
+.framesDownloads {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.frameDownload {
+  box-sizing: border-box;
+  width: 22rem;
+  padding: 1.5rem 1rem 2.8rem 1rem;
+  border-radius: 10px;
+  border: 3px solid rgb(230, 230, 230);
+  background-color: white;
+  position: relative;
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+}
+
+.frameDownload>div {
+  justify-content: center;
+}
+
+.frameDownload>div img {
+  height: 5rem;
+}
+
+.frameDownload>div>a {
+  margin-left: 0.8rem;
+  font-weight: 700;
+}
+
+.frameDownload .botaoDownload {
+  width: 9rem;
+  height: 2.6rem;
+  justify-content: center;
+  position: absolute;
+  border-radius: 5px;
+  bottom: -1.3rem;
+  left: 50%;
+  margin-left: -4.5rem;
+}
+
+/* Página Departamentos */
+
+.divisaoGeral>h1 {
+  margin: 0;
+}
+
+.framesMembros {
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4rem 0 -2.5rem 0;
+}
+
+.frameMembro {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23.1rem;
+  background-color: white;
+  position: relative;
+  padding: 4.1rem 1rem 1rem 1rem;
+  border-radius: 8px;
+  border: 2px solid rgb(210, 210, 210);
+  margin: 3rem 0.4rem 3rem 0.4rem;
+}
+
+.frameMembro .membroFoto {
+  width: 8rem;
+  height: 8rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid rgb(210, 210, 210);
+  margin-bottom: 0.5rem;
+  position: absolute;
+  top: -5rem;
+}
+
+
+.frameMembro .mailMembro {
+  margin-top: 0.5rem;
+}
+
+.frameMembro .mailMembro .iconeGeral {
+  height: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.frameMembro h3 {
+  margin-bottom: 0.1rem;
+}
+
+.frameMembro .aBotao,
+.frameMembro .tagInativo {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.frameMembro .tagInativo {
+  display: inline-block;
+  background-color: rgb(150, 150, 150);
+  border-radius: 5px;
+  color: white;
+}
+
+/* Página Grupo Pesquisa */
+
+.logoGrupoHorizontal,
+.logoGrupoVertical {
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+.logoGrupoHorizontal {
+  width: 18rem;
+  max-width: 90%;
+}
+
+.logoGrupoVertical {
+  height: 8rem;
+}
+
+.grupoDetalhes {
+  width: 48rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grupoDetalhes h3 {
+  margin-top: 2rem;
+}
+
+
+/* Página Calendário Letivo */
+
+.divisaoCalendario {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.miniCalendario {
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.miniCalendario .cabecalhoCalendario {
+  padding: 0.5rem 0;
+  justify-content: center;
+  background-color: rgb(176, 17, 22);
+  border-radius: 5px 5px 0 0;
+}
+
+.setaEsquerda {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid white;
+}
+
+.setaDireita {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid white;
+}
+
+.miniCalendario .cabecalhoCalendario a:nth-child(2) {
+  width: 80%;
+  text-align: center;
+  margin: 0 0.5rem;
+  color: white;
+}
+
+.miniCalendario .corpoCalendario {
+  margin: 0;
+}
+
+.miniCalendario .corpoCalendario th {
+  background-color: rgb(250, 250, 250);
+  padding: 0.5rem;
+  color: rgb(100, 100, 100);
+  text-align: center;
+  border: 2px solid rgb(220, 220, 220);
+  border-top: none;
+}
+
+.miniCalendario .corpoCalendario td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 2px solid rgb(220, 220, 220);
+}
+
+.miniCalendario .dataMarcada {
+  background-color: rgb(176, 17, 22);
+  color: white;
+}
+
+.divisaoCalendario ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.divisaoCalendario ul span {
+  color: rgb(176, 17, 22);
+  font-weight: 700;
+}
+
+/* Página contato */
+
+.formContato,
+.formPortal {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.formContato>p:first-child,
+.formPortal>p:first-child {
+  margin-bottom: 2rem;
+}
+
+.googleMaps {
+  width: 100%;
+  height: 40rem;
+  background-image: url('img/gerais/maps.jpg');
+}
+
+
+/* Estágio e emprego */
+
+
+.escolhaSecao>div {
+  justify-content: center;
+}
+
+.escolhaSecao>div>div {
+  align-items: stretch;
+}
+
+.escolhaSecao a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 0.6rem;
+  color: rgb(100, 100, 100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.escolhaSecao a:hover {
+  color: rgb(0, 80, 110);
+  border: 2px solid rgb(0, 80, 110);
+}
+
+.escolhaSecao #secaoEscolhida,
+.escolhaSecao #secaoEscolhida:hover {
+  color: white;
+  background-color: rgb(0, 80, 110);
+  border: 2px solid rgb(0, 80, 110);
+}
+
+.framesMembrosHorizontais {
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+}
+
+.frameMembroHorizontal {
+  box-sizing: border-box;
+  background-color: white;
+  width: 44%;
+  padding: 1.5rem 1.5rem 1.5rem 7.5rem;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 3%;
+}
+
+.frameMembroHorizontal .fotoMembro {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 4px solid white;
+  overflow: hidden;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.frameMembroHorizontal .infoMembro p,
+.frameMembroHorizontal .infoMembro a {
+  margin-bottom: 0.5rem;
+}
+
+.frameMembroHorizontal .membroCurso {
+  display: block;
+}
+
+.frameMembroHorizontal .enderecoMail>div {
+  flex-wrap: wrap;
+}
+
+.frameMembroHorizontal .infoMembro p:last-child {
+  margin-bottom: 0;
+}
+
+.documentacaoEstagio h2 {
+  margin-bottom: 2rem;
+}
+
+.documentacaoEstagio h4 {
+  text-align: left;
+  margin: 2rem 0 1rem 0;
+}
+
+.documentacaoEstagio .aBotao {
+  margin-top: 2rem;
+}
+
+.etapaEstagio .legendaQuadro {
+  margin: 2rem 0 0 0;
+}
+
+.etapaEstagio table .iconeGeral {
+  height: 2rem;
+  margin-right: 0.4rem;
+}
+
+.etapaEstagio table .anexoTabela {
+  justify-content: center;
+}
+
+.etapaEstagio table th:nth-child(2) {
+  width: 10%;
+}
+
+.etapaEstagio table th:last-child {
+  width: 28%;
+}
+
+.etapaEstagio table td:nth-child(2),
+.etapaEstagio table td:last-child {
+  text-align: center;
+}
+
+
+/* Página TCC */
+
+.tcc h2 {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.tcc h3 {
+  margin: 2.5rem 0 1rem 0;
+}
+
+
+/* Página Monitores */
+
+.monitoria h2 {
+  margin: 1rem 0 3rem 0;
+}
+
+.monitoria .monitoresHorario {
+  margin-top: 1rem;
+}
+
+.monitoria .frameDocente {
+  background-color: rgb(250, 250, 250);
+  box-shadow: none;
+  border: 3px solid rgb(230, 230, 230);
+}
+
+.monitoria .frameDocente:last-child {
+  margin-bottom: 1rem;
+}
+
+.monitoria .frameDocente .imagemDocente {
+  border: 3px solid rgb(230, 230, 230);
+}
+
+.coordenadorMonitoria h2 {
+  margin-bottom: 1rem;
+}
+
+.coordenadorMonitoria .framesMembrosHorizontais {
+  margin: 1rem 0 0 0;
+}
+
+.coordenadorMonitoria .frameMembroHorizontal {
+  margin-bottom: 0;
+}
+
+/* Página Vestibular - Aberto */
+
+.paginaVestibular .divDica {
+  margin: 3rem 0 1rem 0;
+}
+
+.tagVestibular {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
+}
+
+.vestibularAberto h1 {
+  margin-bottom: 0.5rem;
+  transition: all 0.5s;
+}
+
+.vestibularAberto h2 {
+  margin-top: 2rem;
+}
+
+.linkSiteVestibular {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+.vestibularAberto .linkSiteVestibular {
+  justify-content: center;
+}
+
+.linkSiteVestibular img {
+  height: 2.2rem;
+  margin-right: 0.7rem;
+}
+
+.paginaVestibular.secaoCursos {
+  padding: 2rem;
+}
+
+.programacaoVestibular.paginaProgramacao {
+  background-color: rgb(250, 250, 250);
+}
+
+.programacaoVestibular h1 {
+  margin-top: 3rem;
+}
+
+.programacaoVestibular.paginaProgramacao h1 {
+  margin: 0;
+}
+
+.programacaoVestibular h2 {
+  margin-bottom: 1.5rem;
+}
+
+.programacaoVestibular.paginaProgramacao h2 {
+  margin: 2.5rem 0 1rem 0;
+}
+
+.programacaoVestibular .paragrafoIsencao {
+  margin-bottom: 1rem;
+}
+
+.programacaoVestibular ul {
+  margin: 2rem 0 2rem 3rem;
+}
+
+.programacaoVestibular ul li {
+  margin-bottom: 1rem;
+}
+
+.programacaoVestibular h3 {
+  margin-top: 2rem;
+}
+
+.vestibularFechado .dicaVestibular {
+  margin: 1rem 0 2rem 0;
+}
+
+.vestibularFechado form>p:first-child {
+  margin-bottom: 1rem;
+}
+
+/* Galeria de docentes */
+
+.filtrosSelecao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filtrosSelecao .divSelect:first-child {
+  margin-right: 1.5rem;
+}
+
+.filtrosSelecao .divSelect select {
+  background-color: white;
+}
+
+.filtrosSelecao .frameMembro {
+  width: 14.5rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+/* Página perfil */
+
+.perfil .linkVoltar {
+  display: block;
+  width: 60rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.perfil .imagemPerfil {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 5px solid rgb(230, 230, 230);
+  overflow: hidden;
+  margin: 1rem auto 0.5rem auto;
+}
+
+.perfil h1 {
+  margin-bottom: 0.6rem;
+}
+
+.perfil h3 {
+  margin-bottom: 3rem;
+}
+
+.perfil h4 {
+  margin: 2rem 0 0.4rem 0;
+}
+
+.perfil .linkPerfil {
+  flex-wrap: wrap;
+}
+
+.frameDisciplina .nomeCurso {
+  margin: 2rem 0 0 0;
+}
+
+.frameDisciplina .nomeCurso img {
+  height: 2.2rem;
+  flex-shrink: 0;
+  margin-right: 0.6rem;
+}
+
+.frameDisciplina .nomeCurso h4 {
+  margin: 0;
+}
+
+.frameDisciplina .filaDisciplinas {
+  margin: 1rem 0 1rem 2.4rem;
+  flex-wrap: wrap;
+}
+
+.frameDisciplina .disciplina {
+  background-color: white;
+  padding: 0.5rem 0.8rem;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 0.3rem;
+}
+
+/* Página Ingressantes */
+
+.ingressantes .tituloIngressantes {
+  margin-bottom: 2rem;
+}
+
+.ingressantes .listaLinks {
+  margin: 3rem 0;
+}
+
+.ingressantes .divisaoInfo {
+  margin-bottom: 3rem;
+}
+
+.ingressantes .divisaoInfo h2 {
+  margin-top: 3rem;
+}
+
+/* Portal Acadêmico */
+
+footer.paginaPortal {
+  display: none;
+}
+
+.menuPortal {
+  box-sizing: border-box;
+  width: 21.2rem;
+  padding: 2rem 0;
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  bottom: 0;
+  border-right: 2px solid rgb(220, 220, 220);
+  overflow-y: auto;
+}
+
+.menuPortal .idUsuario {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.menuPortal .idUsuario .fotoUsuario {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(240, 240, 240);
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.menuPortal .idUsuario p {
+  line-height: 140%;
+}
+
+.menuPortal ul {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.menuPortal ul li a {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  color: rgb(100, 100, 100);
+  padding: 0.8rem 2rem;
+  border-bottom: 2px solid rgb(240, 240, 240);
+  position: relative;
+}
+
+.menuPortal ul li a:hover,
+.menuPortal #secaoSelecionada {
+  color: rgb(0, 110, 160);
+  background-color: white;
+  padding-left: 2.4rem;
+}
+
+.menuPortal #secaoSelecionada {
+  padding-left: 2rem;
+}
+
+.menuPortal ul li a img {
+  height: 1.4rem;
+  margin-right: 0.5rem;
+}
+
+.menuPortal ul li a>div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.menuPortal ul li a:hover div {
+  width: 0.6rem;
+  transition: all 0.5s;
+}
+
+.menuPortal #secaoSelecionada div {
+  width: 0.4rem;
+  background-color: rgb(176, 17, 22);
+}
+
+.menuPortal .rodapeAlt {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+}
+
+.menuPortal .rodapeAlt p,
+.menuPortal .rodapeAlt a {
+  padding: 0 2rem;
+}
+
+.menuPortal .rodapeAlt p {
+  color: rgb(100, 100, 100);
+}
+
+.botaoMenuPortal {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(180, 0, 0);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 0;
+}
+
+.botaoMenuPortal:hover {
+  background-color: rgb(220, 0, 0);
+}
+
+.botaoMenuPortal img {
+  height: 40%;
+}
+
+.fundoEscuro {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -2;
+  display: none;
+}
+
+.portalAcademico {
+  position: fixed;
+  top: 6rem;
+  left: 21.2rem;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.portalAcademico h2 {
+  margin: 2.5rem 0 1rem 0;
+}
+
+.portalAcademico li {
+  margin-bottom: 1.5rem;
+}
+
+.portalAcademico .comunicadoUrgente {
+  box-sizing: border-box;
+  padding: 2rem;
+  border: 2px solid rgb(180, 0, 0);
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.portalAcademico .comunicadoUrgente p {
+  text-align: center;
+  color: rgb(180, 0, 0);
+}
+
+.portalAcademico .portalPerfil .enderecoPerfil {
+  width: 50rem;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-top: 2px solid rgb(230, 230, 230);
+  border-bottom: 2px solid rgb(230, 230, 230);
+  padding: 1rem 0;
+}
+
+.portalAcademico .portalPerfil .enderecoPerfil a {
+  word-break: break-all;
+}
+
+.portalAcademico .portalPerfil .perfilFoto {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 3px solid rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 2.5rem auto 1rem auto;
+}
+
+.portalAcademico .ligacaoExterna {
+  display: flex;
+  align-items: stretch;
+}
+
+.portalAcademico .ligacaoExterna select {
+  width: auto;
+  margin-right: 1rem;
+}
+
+.portalAcademico .carrossel .imgCarrossel,
+.portalAcademico .portalNoticia .imgNoticia,
+.portalAcademico .portalEvento .imgEvento,
+.portalAcademico .portalApoiador .imgApoiador,
+.portalAcademico .portalDepartamentos .imgDepartamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
+  overflow: hidden;
+  border: 2px solid rgb(230, 230, 230);
+  background-color: rgb(250, 250, 250);
+  margin: 2rem auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+.portalAcademico .carrossel .imgCarrossel {
+  height: 16rem;
+}
+
+.portalAcademico .portalNoticia .imgNoticia,
+.portalAcademico .portalEvento .imgEvento {
+  height: 13rem;
+}
+
+.portalAcademico .portalApoiador .imgApoiador,
+.portalAcademico .portalDepartamentos .imgDepartamento {
+  height: 18rem;
+}
+
+.portalAcademico .imgCarrossel p,
+.portalAcademico .imgNoticia p,
+.portalAcademico .imgEvento p,
+.portalAcademico .imgApoiador p,
+.portalAcademico .imgDepartamento p {
+  flex-direction: column;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.portalAcademico .imgCarrossel .iconeGeral,
+.portalAcademico .imgNoticia .iconeGeral,
+.portalAcademico .imgEvento .iconeGeral,
+.portalAcademico .imgApoiador .iconeGeral,
+.portalAcademico .imgDepartamento .iconeGeral {
+  margin: 0 0 0.5rem 0;
+}
+
+.portalAcademico .imgCarrossel .imagemEscolhida,
+.portalAcademico .imgNoticia .imagemEscolhida,
+.portalAcademico .imgEvento .imagemEscolhida,
+.portalAcademico .imgDepartamento .imagemEscolhida {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.portalAcademico .imgApoiador .logoHorizontal {
+  position: absolute;
+  width: 60%;
+}
+
+.portalAcademico .imgApoiador .logoVertical {
+  position: absolute;
+  height: 60%;
+}
+
+.portalAcademico .secaoPesquisa {
+  padding: 2rem;
+}
+
+.navSubpaginas {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.navSubpaginas a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+}
+
+.navSubpaginas a:last-child {
+  margin-right: 0;
+}
+
+.navSubpaginas a img {
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.navSubpaginas .subpagina {
+  border: 1px solid rgb(0, 110, 160);
+  background-color: rgb(250, 250, 250);
+}
+
+.navSubpaginas #subSelecionada {
+  background-color: rgb(0, 110, 160);
+  color: white;
+}
+
+.botoesFormatacao {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.botoesFormatacao>a,
+.botoesFormatacao .menuEstilos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  flex-shrink: 0;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(210, 210, 210);
+  border-radius: 5px;
+}
+
+.botoesFormatacao>a:last-child {
+  margin-right: 0;
+}
+
+.botoesFormatacao>a:hover,
+.botoesFormatacao .menuEstilos:hover {
+  background-color: rgb(200, 200, 200);
+  border: 2px solid rgb(180, 180, 180);
+}
+
+.botoesFormatacao>a img,
+.botoesFormatacao .menuEstilos img {
+  height: 70%;
+}
+
+.botoesFormatacao #iconeLink {
+  height: 50%;
+}
+
+.botoesFormatacao .menuEstilos {
+  position: relative;
+  cursor: pointer;
+}
+
+.botoesFormatacao .submenu {
+  list-style: none;
+  position: absolute;
+  background-color: rgb(250, 250, 250);
+  width: 10rem;
+  bottom: 2.5rem;
+  left: -2.2rem;
+  border: 2px solid rgb(210, 210, 210);
+  border-radius: 5px;
+  display: none;
+}
+
+.botoesFormatacao .submenu li {
+  margin: 0;
+}
+
+.botoesFormatacao .submenu a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.botoesFormatacao .submenu li:last-child a {
+  border: none;
+}
+
+.botoesFormatacao .submenu #formSub1,
+.botoesFormatacao .submenu #formSub2 {
+  color: rgb(80, 80, 80);
+  font-weight: 700;
+}
+
+.botoesFormatacao .submenu #formSub1 {
+  font-size: 1.5rem;
+}
+
+.botoesFormatacao .submenu #formSub2 {
+  font-size: 1.3rem;
+}
+
+.botoesFormatacao .submenu #formPar {
+  color: rgb(100, 100, 100);
+  font-size: 1.1rem;
+}
+
+.botoesFormatacao .submenu a:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.botoesFormatacao .menuEstilos:hover .submenu {
+  display: block;
+}
+
+.portalAcademico .portalEvento .pessoasEnvolvidas {
+  margin-top: 4rem;
+}
+
+.portalAcademico .portalEvento .formPortal h3 {
+  margin: 4rem 0 3rem 0;
+}
+
+.portalAcademico .gestaoDownload .iconeGeral {
+  height: 2.5rem;
+}
+
+.portalAcademico .gestaoDownload .iconeLogo {
+  height: 2rem;
+  margin-right: 0.6rem;
+}
+
+.portalAcademico .gruposProjetos .iconeGeral {
+  width: 1.8rem;
+  height: auto;
+}
+
+.portalAcademico .gestaoDownload .secaoDownload {
+  margin: 3rem 0;
+}
+
+.portalAcademico .areaUpload {
+  margin-bottom: 3rem;
+}
+
+.portalAcademico .areaUpload .aBotao {
+  margin: 0 0.5rem 0 0;
+}
+
+.portalAcademico .areaUpload div p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.portalAcademico .h3Portal {
+  margin-bottom: 2rem;
+}
+
+.portalAcademico .portalDepartamentos .pessoasEnvolvidas {
+  margin-top: 2rem;
+}
+
+.portalAcademico .portalMonitores {
+  margin-top: 3rem;
+}
+
+.portalAcademico .novaData {
+  display: flex;
+  flex-direction: column;
+}
+
+.portalAcademico .novaData input[type=date],
+.portalAcademico .novaData input[type=text] {
+  margin: 0;
+}
+
+.portalAcademico .novaData>div:first-child .dataCampo:first-child {
+  margin-right: 1rem;
+}
+
+.portalAcademico .novaData label {
+  margin: 0 0 0.5rem 0;
+}
+
+.portalAcademico .novaData .dataDestacar input {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.portalAcademico .novaData .dataDestacar label {
+  margin: 0 0 0 0.5rem;
+  font-weight: 400;
+}
+
+.portalAcademico .novaData>div:nth-child(2) {
+  margin: 1rem 0;
+}
+
+.portalAcademico .portalCalendario h3 {
+  margin: 2rem 0;
+}
+
+.portalAcademico .formPrivilegios>div {
+  flex-wrap: wrap;
+}
+
+.portalAcademico .formPrivilegios>div>div {
+  margin-right: 2rem;
+}
+
+.portalAcademico .formPrivilegios>div>div:last-child {
+  margin-right: 0;
+}
+
+.portalAcademico .adicionarUsuario input[type=text] {
+  margin: 0 0 1rem 0;
+}
+
+.portalAcademico .adicionarUsuario h3 {
+  margin: 1rem 0;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  background-image: radial-gradient(rgb(240, 0, 0), rgb(160, 0, 0));
+  background-image: url('img/gerais/fundoLanding.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: auto;
+}
+
+.landing .ladoImagem {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.landing .ladoImagem img {
+  height: 90%;
+}
+
+.landing .ladoConteudo {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 2;
+}
+
+.landing .ladoConteudo>div {
+  text-align: center;
+}
+
+.landing .splashVestibular {
+  display: block;
+}
+
+.landing h1 {
+  font-size: 8vh;
+  margin: 0;
+  padding: 1.5vh 0;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
+  color: rgb(180, 0, 0);
+}
+
+.landing .splashVestibular>div {
+  margin: 0 auto;
+  width: 48vh;
+  padding: 1vh;
+  border: 0.3vh solid white;
+}
+
+.landing h2 {
+  display: inline-block;
+  padding: 1vh 2.5vh;
+  position: relative;
+  bottom: 2.8vh;
+  font-weight: 400;
+  font-size: 2.5vh;
+  border: 0.2vh solid white;
+  border-radius: 0.5vh;
+  margin: 0;
+  color: white;
+  background-image: linear-gradient(rgb(0, 140, 180), rgb(0, 100, 120));
+}
+
+.landing .chamadaEstudo {
+  font-size: 3vh;
+  font-weight: 400;
+  margin: -0.5vh auto 0 auto;
+  width: 50vh;
+}
+
+.landing .dataInscricao {
+  font-size: 3vh;
+  font-weight: 400;
+  margin: 1.8vh 0 0 0;
+}
+
+.landing .botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing .botoes .aBotao {
+  width: 22vh;
+  padding: 1.2vh 0;
+  border: 0.2vh solid white;
+  border-radius: 0.5vh;
+  background-image: linear-gradient(rgb(0, 140, 180), rgb(0, 100, 120));
+  color: white;
+  font-size: 2.4vh;
+}
+
+.landing .botoes .aBotao:first-child {
+  margin: 2.5vh 0 1.8vh 0;
+}
+
+.landing .continuarSite {
+  width: 38vh;
+  margin: 4vh auto 0 auto;
+  border-top: 0.2vh solid white;
+  padding-top: 1.5vh;
+  font-size: 2.2vh;
+}
+
+.landing .continuarSite a {
+  color: white;
+  text-decoration: underline;
+  font-size: 2.2vh;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 1280px) {
+
+  .bannerGeral {
+    height: 28vw;
+  }
+
+  .bannerMenor {
+    height: 35vw;
+  }
+
+  .carrosselIndex {
+    height: 50vw;
+  }
+
+  .carrosselLegenda h1 {
+    font-size: 2.3rem;
+  }
+
+  .carrosselLegenda h2 {
+    font-size: 1.8rem;
+  }
+
+  .carrosselLegenda .aBotao {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .setasCarrossel a {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid white;
+  }
+
+  .carrosselInfra {
+    height: 45vw;
+  }
+
+  .googleMaps {
+    height: 38vw;
+  }
+
+  .framesMembrosHorizontais {
+    margin: 4rem 0 0 0;
+  }
+
+  .coordenadorMonitoria .framesMembrosHorizontais {
+    margin: 2.5rem 0 0 0;
+  }
+
+  .frameMembroHorizontal {
+    width: 47%;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    margin: 2.8rem 1%;
+  }
+
+  .coordenadorMonitoria .frameMembroHorizontal {
+    width: 70%;
+  }
+
+  .frameMembroHorizontal .fotoMembro {
+    width: 8rem;
+    height: 8rem;
+    top: -4rem;
+    left: 50%;
+    margin-left: -4rem;
+  }
+
+  .frameMembroHorizontal h4,
+  .frameMembroHorizontal .membroCurso,
+  .frameMembroHorizontal .membroHorario {
+    text-align: center;
+  }
+
+  .frameMembroHorizontal .enderecoMail {
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  .frameMembroHorizontal .membroHorario {
+    font-size: 1.1rem;
+  }
+
+  .frameMembroHorizontal .enderecoMail img {
+    height: 1rem;
+    margin-right: 0.3rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .carrosselIndex {
+    height: 60vw;
+  }
+
+  .carrosselLegenda h1 {
+    font-size: 2.1rem;
+  }
+
+  .carrosselLegenda h2 {
+    font-size: 1.6rem;
+  }
+
+  .carrosselLegenda .aBotao {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .setasCarrossel a {
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 2px solid white;
+  }
+
+  .portalAcademico {
+    position: static;
+    margin-top: 6rem;
+    overflow-y: inherit;
+    z-index: -1;
+  }
+
+  .menuPortal {
+    width: 0;
+    border: none;
+    z-index: 1;
+  }
+
+  .botaoMenuPortal {
+    display: flex;
+    z-index: 1;
+  }
+
+  footer.paginaPortal {
+    display: block;
+  }
+
+  .landing {
+    display: block;
+  }
+
+  .landing .ladoImagem {
+    display: none;
+  }
+
+  .landing .ladoConteudo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landing h1 {
+    font-size: 9vw;
+    margin: 0;
+    padding: 2vw 0;
+  }
+
+  .landing .splashVestibular>div {
+    width: 50vw;
+    padding: 1vw;
+    border: 0.2vw solid white;
+  }
+
+  .landing h2 {
+    padding: 1.2vw 3vw;
+    bottom: 3.2vw;
+    font-size: 2.5vw;
+    border: 0.2vw solid white;
+    border-radius: 0.5vw;
+  }
+
+  .landing .chamadaEstudo {
+    font-size: 2.6vw;
+    margin: -0.5vw auto 0 auto;
+    width: 50vw;
+  }
+
+  .landing .dataInscricao {
+    font-size: 2.6vw;
+    margin: 2vw 0 0 0;
+  }
+
+  .landing .botoes .aBotao {
+    width: 20vw;
+    padding: 1vw 0;
+    border: 0.2vw solid white;
+    border-radius: 0.5vw;
+    font-size: 2.2vw;
+  }
+
+  .landing .botoes .aBotao:first-child {
+    margin: 3vw 0 2.5vw 0;
+  }
+
+  .landing .continuarSite {
+    width: 35vw;
+    margin: 3vw auto 0 auto;
+    border-top: 0.2vw solid white;
+    padding-top: 2vw;
+    font-size: 2vw;
+  }
+
+  .landing .continuarSite a {
+    font-size: 2vw;
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+
+  .landing .ladoConteudo {
+    width: 100%;
+    display: block;
+    padding: 3rem 0;
+  }
+
+  .landing .continuarSite {
+    padding-bottom: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+
+  /* Nativos */
+
+  h1,
+  h1>a {
+    font-size: 2rem;
+  }
+
+  h2,
+  h2>a {
+    font-size: 1.6rem;
+  }
+
+  h3,
+  h3>a {
+    font-size: 1.4rem;
+  }
+
+  h4,
+  h4>a {
+    font-size: 1.2rem;
+  }
+
+  .texto11,
+  footer p {
+    font-size: 1rem;
+  }
+
+  p,
+  a,
+  .texto12,
+  li,
+  label {
+    font-size: 1.1rem;
+  }
+
+  .texto13,
+  .texto14 {
+    font-size: 1.2rem;
+  }
+
+  .texto11 {
+    font-size: 1rem;
+  }
+
+  .centralizarDiv {
+    padding: 2rem 0;
+  }
+
+  .largura70 {
+    width: 100%;
+  }
+
+
+  /* Banner topo */
+
+  .bannerTopo {
+    padding: 4rem 0;
+  }
+
+  .bannerTopo .bannerLogo {
+    border-radius: 30px 10px 30px 10px;
+    padding: 2.5rem;
+  }
+
+
+  /* Seção anúncio cursos */
+
+
+  .secaoAnuncioCursos .framesCursosAlt {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .secaoAnuncioCursos .frameCursoAlt {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .escolhaSecao>div {
+    flex-direction: column;
+  }
+
+  .escolhaSecao a {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .escolhaSecao a:first-child {
+    margin-left: 0;
+  }
+
+
+  /* Header */
+
+  header nav {
+    height: 5rem;
+    max-width: 95%;
+  }
+
+  .menuPortal,
+  .divEscuroHeader {
+    top: 5rem;
+  }
+
+  .primeiraSecao,
+  .portalAcademico {
+    margin-top: 5rem;
+  }
+
+  #logoCPS,
+  #logoGoverno {
+    display: none;
+  }
+
+  #logoFatec {
+    margin-left: 0.8rem;
+  }
+
+  header .menuTopo {
+    justify-content: flex-end;
+  }
+
+  #botaoMenu {
+    display: flex;
+  }
+
+  header .itensMenu {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    top: 5rem;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+  }
+
+  header .itemMenu {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  header .itemMenu>a {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: none;
+    padding: 2rem 2rem 1rem 2rem;
+    font-weight: 700;
+  }
+
+  header .itemMenu:hover>a {
+    color: rgb(80, 80, 80);
+    border-bottom: none;
+    background-color: rgb(250, 250, 250);
+  }
+
+  header .submenu {
+    position: static;
+    display: block;
+    border-radius: 0;
+    background-color: rgb(250, 250, 250);
+    width: auto;
+    border: none;
+  }
+
+  .aItemMenu {
+    padding: 1.4rem 4rem;
+  }
+
+  .aItemMenu:hover {
+    padding-left: 4.5rem;
+  }
+
+  header .submenu .subtituloMenu {
+    padding: 1.8rem 2rem 0.7rem 2rem;
+  }
+
+  header #primeiroSubtitulo {
+    padding-top: 0.5rem;
+  }
+
+  header .menuTopo>li:hover .itensMenu {
+    display: flex;
+  }
+
+  /* Footer */
+
+  footer .fileiraLogos a {
+    height: 2.8rem;
+    margin-right: 0.9rem;
+  }
+
+  footer .fileiraEndereco>div:first-child {
+    width: 17.5rem;
+    margin-right: 0.8rem;
+  }
+
+  footer .fileiraEndereco>div:nth-child(2) {
+    width: 9rem;
+  }
+
+  /* Index */
+
+  .carrosselLegenda {
+    bottom: 1rem;
+  }
+
+  .carrosselLegenda h1 {
+    font-size: 1.5rem;
+  }
+
+  .carrosselLegenda h2 {
+    font-size: 1.3rem;
+  }
+
+  .carrosselLegenda .aBotao {
+    padding: 0.4rem 0.7rem;
+    font-size: 1rem;
+  }
+
+  .setasCarrossel a {
+    width: auto;
+    height: 1.5rem;
+    border: none;
+    background-color: inherit;
+  }
+
+  .setasCarrossel a img {
+    height: 100%;
+  }
+
+  .secaoRedesSociais {
+    height: 6rem;
+  }
+
+  .frameCurso {
+    width: 39%;
+    margin: 2%;
+  }
+
+  .secaoVestibular>div {
+    flex-direction: column-reverse;
+    padding-bottom: 4rem;
+    max-width: 80%;
+  }
+
+  .secaoVestibular .bigLink {
+    font-size: 2.5rem;
+    margin-bottom: -2rem;
+  }
+
+  .secaoVestibular .divisaoTexto {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .secaoVestibular .divisaoTexto h2,
+  .secaoVestibular .divisaoTexto p,
+  .secaoVestibular .divisaoTexto {
+    text-align: center;
+  }
+
+  .secaoVestibular img {
+    height: 12rem;
+    margin: 0 0 2rem 0;
+    position: relative;
+    left: 1.5rem;
+  }
+
+  .secaoNoticias .centralizarDiv,
+  .secaoEventos .centralizarDiv {
+    max-width: 90%;
+  }
+
+  .secaoNoticias .frameNoticia,
+  .secaoEventos .frameEvento {
+    width: 95%;
+    margin: 1rem 0;
+  }
+
+  .frameNoticia .imagemNoticia,
+  .frameEvento .imagemEvento {
+    height: 40vw;
+  }
+
+  .secaoCampus {
+    padding: 3rem 1rem;
+  }
+
+  .secaoCampus h1 a {
+    font-size: 2rem;
+  }
+
+  .secaoCampus>a {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .secaoDepoimentos .framesDepoimentos {
+    flex-wrap: wrap;
+  }
+
+  .secaoDepoimentos .frameDepoimento {
+    width: 80%;
+    margin: 2rem 0 2rem 0;
+  }
+
+  /* Página Curso */
+
+  .cursoBanner {
+    padding: 7rem 0 4rem 0;
+  }
+
+  .cursoBanner>div {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    border-radius: 80px 0px 80px 0px;
+    border: 6px solid rgb(250, 250, 250);
+  }
+
+  .cursoBanner>div>div {
+    width: 7.5rem;
+    height: 7.5rem;
+    top: -4.1rem;
+    border: 6px solid white;
+    margin-bottom: -3.5rem;
+  }
+
+  .cursoSobre {
+    padding-bottom: 1rem;
+  }
+
+  .descricaoCurso {
+    flex-direction: column;
+  }
+
+  .descricaoCurso img {
+    width: 80%;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .descricaoCurso p {
+    width: 100%;
+  }
+
+  .secaoDividida {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .secaoDividida .divisaoImagem {
+    width: 100%;
+    height: 58vw;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .secaoDividida .divisaoTexto {
+    width: 100%;
+  }
+
+  .divLeitura {
+    margin: 0 auto 3rem auto;
+  }
+
+  .secaoOportunidades {
+    padding: 1rem 0;
+  }
+
+  .secaoOportunidades .framesEstagios {
+    margin: 2rem 0;
+  }
+
+  .secaoOportunidades .frameEstagio {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .secaoOportunidades .frameEstagio .empresaLogo {
+    width: 8rem;
+  }
+
+  .secaoOportunidades .frameEstagio .empresaInfo {
+    padding: 1.5rem 0 0 0;
+    margin: 1.5rem 0 0 0;
+    border-left: none;
+    border-top: 1px solid rgb(220, 220, 220);
+    width: 100%;
+  }
+
+  .frameDocente {
+    margin: 2rem 0;
+    padding: 1.5rem;
+  }
+
+  .frameDocente .imagemDocente {
+    position: static;
+    border: none;
+    width: 9rem;
+    height: 9rem;
+    margin: 0 1rem 0 0;
+  }
+
+  .frameDocente .docenteGeral {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .frameDocente .mailLattes {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1.5rem;
+  }
+
+  .frameDocente .mailLattes>a {
+    margin-right: 0;
+  }
+
+  .frameDocente .mailLattes>a img {
+    height: 1.2rem;
+  }
+
+  .frameDocente .mailLattes>a:first-child {
+    width: 100%;
+  }
+
+  .frameDocente .mailLattes .enderecoMail {
+    flex-wrap: wrap;
+  }
+
+  .frameDocente .mailLattes>a:nth-child(2) img {
+    margin-left: 0.25rem;
+    margin-right: 0.65rem;
+  }
+
+  .docenteDisciplinas {
+    margin: 0.5rem 0 0 1.5rem;
+  }
+
+  .monitoria .monitoresHorario {
+    margin-left: 1.5rem;
+  }
+
+  /* Página evento */
+
+  .sobreResponsavel .fotoResponsavel {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1.2rem;
+  }
+
+  .linksResponsavel a {
+    padding: 0.6rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 1rem 0.5rem 0 0;
+  }
+
+  /* Página Quem somos */
+
+
+  .resumoQuemSomos {
+    margin-top: 1rem;
+  }
+
+  .logoFatecAlt {
+    display: none;
+  }
+
+  .quemSomosInfo {
+    width: 100%;
+  }
+
+  .timeline::after {
+    left: 1rem;
+    margin: 0;
+  }
+
+  .frameTimeline {
+    width: 100%;
+    padding: 0 0 2rem 3rem;
+  }
+
+  .ladoDireito {
+    left: 0;
+  }
+
+  .ladoDireito::after,
+  .ladoEsquerdo::after {
+    left: 0.4rem;
+    top: 1.8rem;
+  }
+
+  .ladoEsquerdo::before,
+  .ladoDireito::before {
+    left: 2.2rem;
+    top: 1.5rem;
+    border-right: 1rem solid white;
+    border-left: none;
+  }
+
+  /* Página Downloads */
+
+  .frameDownload {
+    width: 75%;
+    margin: 1.5rem 0 1.5rem 0;
+    padding-bottom: 2rem;
+  }
+
+  /* Página Departamentos */
+
+  .frameMembro {
+    width: 30rem;
+    max-width: 100%;
+  }
+
+  .divisaoHorarios h2,
+  .divisaoHorarios p {
+    text-align: left;
+  }
+
+  /* Página Calendário Letivo */
+
+  .divisaoCalendario {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .miniCalendario {
+    margin: 0 0 2rem 0;
+  }
+
+  /* Página Contato */
+
+  .formContato,
+  .formPortal {
+    width: 100%;
+  }
+
+  /* Página Estágio e TCC */
+
+  .framesMembrosHorizontais {
+    margin: 6rem 0 2rem 0;
+  }
+
+  .coordenadorMonitoria .framesMembrosHorizontais {
+    margin: 5rem 0 0 0;
+  }
+
+  .frameMembroHorizontal {
+    width: 100%;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    margin: 0 0 5.5rem 0;
+  }
+
+  .coordenadorMonitoria {
+    padding: 2rem 1rem;
+  }
+
+  .coordenadorMonitoria .frameMembroHorizontal {
+    width: 100%;
+  }
+
+  .frameMembroHorizontal:last-child {
+    margin: 0;
+  }
+
+  /* Página Monitoria */
+
+  .monitoria h2 {
+    margin: 2rem 0 0 0;
+  }
+
+  /* Página Galeria de docentes */
+
+  .filtrosSelecao .divSelect {
+    flex-direction: column;
+  }
+
+  .galeriaMembros .frameMembro {
+    width: 13rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+  }
+
+  /* Página Vestibular - aberto */
+
+  .programacaoVestibular .tituloProgramacao,
+  .programacaoVestibular .textoAuxProgramacao {
+    text-align: left;
+  }
+
+  .landing h1 {
+    font-size: 12vw;
+    margin: 0;
+    padding: 3vw 0;
+  }
+
+  .landing .splashVestibular>div {
+    width: 70vw;
+    padding: 1.5vw;
+    border: 0.2vw solid white;
+  }
+
+  .landing h2 {
+    padding: 1.2vw 3vw;
+    bottom: 4vw;
+    font-size: 3.5vw;
+    border: 0.2vw solid white;
+    border-radius: 0.5vw;
+  }
+
+  .landing .chamadaEstudo {
+    font-size: 4vw;
+    margin: -1vw auto 0 auto;
+    width: 70vw;
+  }
+
+  .landing .dataInscricao {
+    font-size: 4vw;
+    margin: 2vw 0 0 0;
+  }
+
+  .landing .botoes .aBotao {
+    width: 35vw;
+    padding: 1vw 0;
+    border: 0.2vw solid white;
+    border-radius: 0.5vw;
+    font-size: 3.5vw;
+  }
+
+  .landing .botoes .aBotao:first-child {
+    margin: 3vw 0 2.5vw 0;
+  }
+
+  .landing .continuarSite {
+    width: 45vw;
+    margin: 4vw auto 0 auto;
+    border-top: 0.2vw solid white;
+    padding-top: 2vw;
+    font-size: 3vw;
+  }
+
+  .landing .continuarSite a {
+    font-size: 3vw;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Nativos */
+
+  h1,
+  h1>a {
+    font-size: 1.8rem;
+  }
+
+  h2,
+  h2>a {
+    font-size: 1.4rem;
+  }
+
+  h3,
+  h3>a {
+    font-size: 1.3rem;
+  }
+
+  h4,
+  h4>a {
+    font-size: 1.1rem;
+  }
+
+  .texto10 {
+    font-size: 0.9rem;
+  }
+
+  p,
+  a,
+  .texto11,
+  .texto12,
+  li,
+  label {
+    font-size: 1rem;
+  }
+
+  .texto13,
+  .texto14 {
+    font-size: 1.1rem;
+  }
+
+  table td,
+  table th,
+  table a,
+  table p {
+    font-size: 0.9rem;
+  }
+
+  /* Banner topo */
+
+  .bannerTopo {
+    padding: 3rem 0;
+  }
+
+  .bannerTopo .bannerLogo {
+    padding: 2rem;
+    border-radius: 20px 5px 20px 5px;
+  }
+
+  /* Footer */
+
+
+  footer .fileiraEndereco {
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+
+  footer .fileiraEndereco>div {
+    margin: 0;
+  }
+
+  footer .fileiraEndereco>div:first-child {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  footer .fileiraEndereco>div:nth-child(2) {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer .fileiraRedesSociais {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  footer .fileiraRedesSociais a {
+    height: 1.5rem;
+  }
+
+
+  /* Index */
+
+
+  .carrosselLegenda {
+    width: 85%;
+    bottom: 1rem;
+  }
+
+  .carrosselLegenda h1 {
+    font-size: 1.1rem;
+  }
+
+  .carrosselLegenda h2 {
+    font-size: 0.9rem;
+  }
+
+  .carrosselLegenda .aBotao {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .setasCarrossel a {
+    height: 1.2rem;
+  }
+
+  .secaoRedesSociais {
+    flex-direction: column;
+  }
+
+  .secaoRedesSociais>div {
+    height: auto;
+  }
+
+  .secaoRedesSociais a {
+    height: auto;
+    margin: 0.5rem 0.3rem 0 0.2rem;
+  }
+
+  .secaoRedesSociais a img {
+    height: 2rem;
+  }
+
+  .frameCurso {
+    width: 60%;
+    margin: 1rem 0;
+  }
+
+  .secaoCampus {
+    padding: 2rem 1rem;
+  }
+
+  .secaoCampus h1 a {
+    font-size: 1.5rem;
+  }
+
+  .secaoCampus>a {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .cursoBanner>div {
+    border-radius: 60px 0px 60px 0px;
+    border: 4px solid rgb(250, 250, 250);
+  }
+
+  .cursoBanner>div>div {
+    width: 6.5rem;
+    height: 6.5rem;
+    top: -3.7rem;
+    margin-bottom: -3.1rem;
+    border: 4px solid white;
+  }
+
+  .frameDocente {
+    padding: 1rem;
+  }
+
+  .frameDocente .imagemDocente {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  /* Página proposição deventos */
+
+
+  .divAlertaNovoEvento {
+    padding: 2rem;
+    border-radius: 5px;
+  }
+
+  .divAlertaNovoEvento ol {
+    margin: 2rem 0 2rem 1.5rem;
+  }
+
+  .eventoTipo,
+  .filaCompartilhar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .eventoTipo h2 {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .filaCompartilhar a {
+    margin: 0.5rem 0.6rem 0 0;
+  }
+
+  .filaCompartilhar a:last-child {
+    margin-right: 0;
+  }
+
+  .sobreResponsavel {
+    padding-top: 2rem;
+  }
+
+  .sobreResponsavel>div {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .sobreResponsavel>h2 {
+    margin-bottom: 2rem;
+  }
+
+  .sobreResponsavel .fotoResponsavel {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto 1rem auto;
+  }
+
+  .sobreResponsavel h3,
+  .sobreResponsavel .tagResponsavel {
+    text-align: center;
+  }
+
+  .linksResponsavel {
+    justify-content: center;
+  }
+
+  .perfil .linksResponsavel {
+    justify-content: flex-start;
+  }
+
+  .linksResponsavel a {
+    margin: 1rem 0.5rem 0 0;
+  }
+
+  /* Página Notícia */
+
+
+  .corpoNoticia ul,
+  .corpoNoticia ol {
+    margin: 0 0 1rem 2rem;
+  }
+
+  /* Página Calendário letivo */
+
+  .miniCalendario .corpoCalendario th,
+  .miniCalendario .corpoCalendario td {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  /* Página Quem somos */
+
+
+  .frameTimeline>div {
+    padding: 1rem;
+  }
+
+  .timeline .filaFotos .fotoHistoria {
+    margin: 1rem 0.5rem 0 0;
+  }
+
+  /* Página Downloads */
+
+  .frameDownload {
+    width: 90%;
+  }
+
+  /* Página Central Estágio e TCC */
+
+
+  .frameMembroHorizontal {
+    padding: 5rem 0.8rem 0.8rem 0.8rem;
+  }
+
+  .frameMembroHorizontal .enderecoMail,
+  .frameMembroHorizontal .membroHorario {
+    font-size: 1rem;
+  }
+
+  .etapaEstagio .anexoTabela {
+    flex-direction: column;
+  }
+
+  .linkSiteVestibular {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .linkSiteVestibular img {
+    height: 1.4rem;
+    margin-right: 0.6rem;
+  }
+
+  /* Página Galeria de docentes */
+
+  .filtrosSelecao {
+    flex-direction: column;
+    margin: 1.5rem 0 4rem 0;
+  }
+
+  .filtrosSelecao .divSelect,
+  .filtrosSelecao .divSelect:first-child {
+    width: 80%;
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .filtrosSelecao .divSelect:first-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .filtrosSelecao .divSelect select {
+    width: 100%;
+  }
+
+  .filtrosSelecao .divSelect label {
+    margin-left: 1rem;
+  }
+
+  .galeriaMembros .frameMembro {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Página perfil */
+
+  .perfil .imagemPerfil {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 0.7rem;
+  }
+
+  /* Seção escolha */
+
+  .escolhaSecao a {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+  }
+
+  /* Seção Portal Acadêmico */
+
+
+  .portalAcademico .ligacaoExterna {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .portalAcademico .ligacaoExterna select {
+    width: auto;
+    margin: 0 0 0.8rem 0;
+  }
+
+  .portalAcademico .ligacaoExterna input {
+    margin: 0;
+  }
+
+  .portalAcademico .carrossel .imgCarrossel {
+    width: 100%;
+    height: 53vw;
+  }
+
+  .portalAcademico .portalNoticia .imgNoticia,
+  .portalAcademico .portalEvento .imgEvento {
+    width: 100%;
+    height: 41vw;
+  }
+
+  .portalAcademico .portalApoiador .imgApoiador,
+  .portalAcademico .portalDepartamentos .imgDepartamento {
+    width: 100%;
+    height: 50vw;
+  }
+
+  .portalAcademico table th {
+    font-size: 1rem;
+  }
+
+  .portalAcademico table .fotoPessoa {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .portalAcademico table .miniaturaFoto {
+    width: 4rem;
+    height: 2.8rem;
+  }
+
+  .portalAcademico .gestaoDownload .iconeGeral {
+    height: 2.2rem;
+  }
+
+  .portalAcademico .gestaoDownload .iconeLogo {
+    display: none;
+  }
+
+  .portalAcademico .novaData>div:first-child {
+    flex-direction: column;
+  }
+
+  .portalAcademico .novaData>div:first-child .dataCampo:first-child {
+    margin: 0 0 1rem 0;
+  }
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+  table td,
+  table th {
+    padding: 0.6rem 0.2rem;
+  }
+
+  .portalAcademico table .fotoPessoa,
+  .portalAcademico table .miniaturaFoto,
+  .portalAcademico .gestaoDownload .iconeGeral,
+  .portalAcademico .gruposProjetos .iconeGeral {
+    display: none;
+  }
+
+  .portalAcademico table .colunaAcoes {
+    width: 2rem;
+  }
+
+  .secaoAnuncioCursos .frameCursoAlt img {
+    height: 3rem;
+  }
+
+  .secaoVestibular .bigLink {
+    font-size: 1.8rem;
+    top: -2.9rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .grupoFacebook>a>img {
+    height: 3rem;
+  }
+
+  .grupoFacebook>a>div {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .miniCalendario .corpoCalendario th,
+  .miniCalendario .corpoCalendario td {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+
+  /* Seção escolha */
+
+  .escolhaSecao>div>div {
+    flex-direction: column;
+  }
+
+  .escolhaSecao a {
+    margin: 0;
+  }
+
+  .escolhaSecao>div>div>a:first-child {
+    margin-bottom: 0.7rem;
+  }
+
+  .frameCurso {
+    width: 80%;
+  }
+
+  .frameMembroHorizontal .enderecoMail {
+    flex-direction: column;
+  }
+
+  .frameMembroHorizontal .enderecoMail img {
+    margin-right: 0;
+  }
+
+  .frameMembroHorizontal .enderecoMail>div {
+    justify-content: center;
+  }
+
+  .linkSiteVestibular {
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+  }
+
+  .linkSiteVestibular img,
+  .frameMembro .mailMembro .iconeGeral {
+    display: none;
+  }
+
+  footer .fileiraLogos a {
+    height: 2.5rem;
+  }
+}
