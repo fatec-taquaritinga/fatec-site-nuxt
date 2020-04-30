@@ -1,8 +1,22 @@
 {
   "name": "fatec-site",
-  "version": "1.0.0",
   "description": "Website da Fatec Taquaritinga construído com Vue.js e Nuxt.js",
-  "author": "Erick Eduardo Petrucelli &lt;erick.petrucelli@fatectq.edu.br&gt;",
+  "version": "1.0.0",
+  "author": "Erick Eduardo Petrucelli <erick.petrucelli@fatectq.edu.br>",
+  "contributors": [
+    "Eder Carlos Salazar Sotto <eder.sotto@fatectq.edu.br>",
+    "Felipe do Espírito Santo <felipe.santo@fatectq.edu.br>",
+    "Gustavo Henrique Del Vechio <gustavo.vechio@fatectq.edu.br>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fatec-taquaritinga/fatec-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fatec-taquaritinga/fatec-site/issues"
+  },
+  "homepage": "https://github.com/fatec-taquaritinga/fatec-site#readme",
   "scripts": {
     "dev": "cross-env NODE_ENV=development HOST=localhost PORT=3000 nuxt",
     "start": "cross-env NODE_ENV=production HOST=0.0.0.0 PORT=80 nuxt start",
