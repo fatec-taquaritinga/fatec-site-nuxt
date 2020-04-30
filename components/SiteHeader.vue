@@ -22,28 +22,28 @@ export default {
               <ul class="submenu">
                 <li id="primeiroSubtitulo" class="subtituloMenu">Graduação presencial:</li>
                 <li>
-                  <a href="#" class="aItemMenu aItemMenuCursos textoVerde">
+                  <nuxt-link to="/cursos/agronegocio" class="aItemMenu aItemMenuCursos textoVerde">
                     <div class="fundoVerde"></div>
                     <img src="~/assets/img/icones/iconeAgro.svg" alt="Icone" />Agronegócio
-                  </a>
+                  </nuxt-link>
                 </li>
                 <li>
-                  <a href="#" class="aItemMenu aItemMenuCursos textoAzul">
+                  <nuxt-link to="/cursos/analise-e-desenvolvimento-de-sistemas" class="aItemMenu aItemMenuCursos textoAzul">
                     <div class="fundoAzul"></div>
                     <img src="~/assets/img/icones/iconeADS.svg" alt="Icone" />Análise e Desenvolvimento de Sistemas
-                  </a>
+                  </nuxt-link>
                 </li>
                 <li>
-                  <a href="#" class="aItemMenu aItemMenuCursos textoVermelho">
+                  <nuxt-link to="/cursos/producao-industrial" class="aItemMenu aItemMenuCursos textoVermelho">
                     <div class="fundoVermelho"></div>
                     <img src="~/assets/img/icones/iconePI.svg" alt="Icone" />Produção Industrial
-                  </a>
+                  </nuxt-link>
                 </li>
                 <li>
-                  <a href="#" class="aItemMenu aItemMenuCursos textoAzulClaro">
+                  <nuxt-link to="/cursos/sistemas-para-internet" class="aItemMenu aItemMenuCursos textoAzulClaro">
                     <div class="fundoAzulClaro"></div>
                     <img src="~/assets/img/icones/iconeSI.svg" alt="Icone" />Sistemas para Internet
-                  </a>
+                  </nuxt-link>
                 </li>
                 <li class="subtituloMenu">Pós-Graduação Lato Sensu:</li>
                 <li>
@@ -84,7 +84,7 @@ export default {
               <a>Institucional</a>
               <ul class="submenu">
                 <li>
-                  <nuxt-link to="institucional/quem-somos" exact class="aItemMenu">
+                  <nuxt-link to="/institucional/quem-somos" exact class="aItemMenu">
                     <div class="fundoVermelho"></div>
                     <img src="~/assets/img/icones/iconePredio.svg" alt="Icone" />Quem somos
                   </nuxt-link>
