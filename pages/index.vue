@@ -16,7 +16,7 @@ export default {
         </a>
       </div>
       <div class="carrosselLegenda">
-        <h1 class="textoBranco">Fatec Taquaritinga promove curso de servidores</h1>
+        <h1 class="textoBranco">Fatec Taquaritinga promove nada</h1>
         <h2 class="textoBranco">Evento é realizado entre os dias 4 e 8 de abril</h2>
         <a href="#" class="aBotao fundoAzulClaro textoBranco">Saiba mais...</a>
       </div>
