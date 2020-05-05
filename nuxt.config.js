@@ -42,6 +42,9 @@ export default {
     // Doc: https://github.com/nuxt-community/axios-module
     '@nuxtjs/axios'
   ],
+  axios: {
+    baseURL: isDev ? 'https://fatec-site-api.sotto.com.br/api/' : 'futura-url-em-producao'
+  },
   pwa: {
     workbox: {
       dev: false,
@@ -81,6 +84,14 @@ export default {
       './app.html'
     ],
     whitelist: ['html', 'body']
+  },
+  server: {
+    https: isDev
+      ? {
+        key: fs.readFileSync(path.resolve(__dirname, 'private/localhost.key')),
+        cert: fs.readFileSync(path.resolve(__dirname, 'private/localhost.crt'))
+      }
+      : false
   },
   build: {
     postcss: {

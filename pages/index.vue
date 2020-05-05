@@ -1,27 +1,21 @@
 <script>
+import Carousel from '~/components/Carousel'
+
 export default {
-  name: 'Index'
+  name: 'Index',
+  components: {
+    Carousel
+  },
+  async asyncData ({ $axios }) {
+    const destaques = await $axios.$get('destaques')
+    return { destaques }
+  }
 }
 </script>
 
 <template>
   <main id="index">
-    <section class="carrosselIndex primeiraSecao">
-      <div class="setasCarrossel">
-        <a href="#" class="translate">
-          <img src="~/assets/img/icones/iconeSetaEsquerda.svg" alt="Icone" />
-        </a>
-        <a href="#" class="translate">
-          <img src="~/assets/img/icones/iconeSetaDireita.svg" alt="Icone" />
-        </a>
-      </div>
-      <div class="carrosselLegenda">
-        <h1 class="textoBranco">Fatec Taquaritinga promove nada</h1>
-        <h2 class="textoBranco">Evento é realizado entre os dias 4 e 8 de abril</h2>
-        <a href="#" class="aBotao fundoAzulClaro textoBranco">Saiba mais...</a>
-      </div>
-      <div class="fadeBaixo"></div>
-    </section>
+    <Carousel class="carrosselIndex primeiraSecao fundoAzulCPS" :items="destaques" />
 
     <section class="secaoRedesSociais">
       <p>

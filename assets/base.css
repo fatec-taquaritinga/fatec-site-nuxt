@@ -1199,6 +1199,7 @@ footer .fileiraCreditos .aBotao {
 
 /* Carrossel */
 
+.carrosselContainer,
 .carrosselIndex,
 .secaoCampus,
 .carrosselInfra {
@@ -1214,7 +1215,47 @@ footer .fileiraCreditos .aBotao {
 
 .carrosselIndex {
   height: 40vw;
-  background-image: url('img/destaques/bannerIndexA.jpg');
+}
+
+.carrosselContainer > div:not([class]) {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.carrosselItem {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carrosselItem::after {
+  content: '';
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-blend-mode: multiply;
+}
+
+.carrosselImagem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: var(--cor-azul-cps);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.carrosselImagem img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .secaoCampus {
@@ -1233,10 +1274,12 @@ footer .fileiraCreditos .aBotao {
 
 .setasCarrossel {
   width: 95%;
+  position: absolute;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 2;
 }
 
 .setasCarrossel a {
@@ -1256,11 +1299,11 @@ footer .fileiraCreditos .aBotao {
 }
 
 .carrosselLegenda {
-  width: 90%;
+  width: 100%;
   position: absolute;
   bottom: 2rem;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .carrosselLegenda h1 {
@@ -1281,7 +1324,6 @@ footer .fileiraCreditos .aBotao {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   background-blend-mode: multiply;
 }
-
 
 .carrosselInfra h2 {
   z-index: 1;
@@ -4089,7 +4131,7 @@ footer.paginaPortal {
   /* Index */
 
   .carrosselLegenda {
-    bottom: 1rem;
+    bottom: 1.25rem;
   }
 
   .carrosselLegenda h1 {
@@ -4633,7 +4675,6 @@ footer.paginaPortal {
 
 
   .carrosselLegenda {
-    width: 85%;
     bottom: 1rem;
   }
 
