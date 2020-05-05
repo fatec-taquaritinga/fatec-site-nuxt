@@ -82,14 +82,6 @@ export default {
     ],
     whitelist: ['html', 'body']
   },
-  server: {
-    https: isDev
-      ? {
-        key: fs.readFileSync(path.resolve(__dirname, 'private/localhost.key')),
-        cert: fs.readFileSync(path.resolve(__dirname, 'private/localhost.crt'))
-      }
-      : false
-  },
   build: {
     postcss: {
       plugins: {
